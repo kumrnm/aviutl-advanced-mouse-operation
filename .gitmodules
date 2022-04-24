@@ -1,0 +1,3 @@
+[submodule "aviutl_exedit_sdk"]
+	path = aviutl_exedit_sdk
+	url = https://github.com/kumrnm/aviutl_exedit_sdk.git
