@@ -45,17 +45,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>advanced_mouse_opeartion</TargetName>
+    <TargetName>AdvancedMouseOperation</TargetName>
     <TargetExt>.auf</TargetExt>
     <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)aviutl_exedit_sdk;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)aviutl_exedit_sdk;$(SolutionDir)eigen;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>advanced_mouse_operation</TargetName>
+    <TargetName>AdvancedMouseOperation</TargetName>
     <TargetExt>.auf</TargetExt>
     <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)aviutl_exedit_sdk;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)aviutl_exedit_sdk;$(SolutionDir)eigen;</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -99,13 +99,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mouseTarget.cpp" />
+    <ClCompile Include="repeatedKeyInput.cpp" />
+    <ClCompile Include="rotate.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="library.def" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="config.h" />
     <ClInclude Include="dbgstream.h" />
+    <ClInclude Include="ini.h" />
+    <ClInclude Include="memref.h" />
+    <ClInclude Include="mouseTarget.h" />
+    <ClInclude Include="repeatedKeyInput.h" />
+    <ClInclude Include="rotate.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

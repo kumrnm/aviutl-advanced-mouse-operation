@@ -14,10 +14,12 @@ namespace dbgstream {
 		}
 	};
 
-	inline void init() {
-		static nnStreambuf dbgstream;
-		std::cout.rdbuf(&dbgstream);
-	}
+	inline struct _Init {
+		_Init() {
+			static nnStreambuf dbgstream;
+			std::cout.rdbuf(&dbgstream);
+		}
+	} _init;
 }
 
-#define cdbg (std::cout)
+inline std::ostream& cdbg = std::cout;
