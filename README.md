@@ -56,10 +56,8 @@ transparent=0x54  ; 透過
 fixGroupTarget=on
 
 [other]
-; 水平軸回転の回転量
-rotationAmount=0.01
-; キー連打コマンド入力時の押下間隔の上限（単位：秒）
-repeatedKeyInputTimeLimit=0.3
+rotationAmount=0.01            ; 水平軸回転の回転量
+repeatedKeyInputTimeLimit=0.3  ; キー連打コマンド入力時の押下間隔の上限（単位：秒）
 ```
 
 ## 注意
