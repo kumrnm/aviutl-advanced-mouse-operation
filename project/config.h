@@ -11,7 +11,7 @@ namespace config {
 
 	inline bool fixGroupTarget;
 
-	inline double rotateSpeed;
+	inline double rotationAmount;
 	inline double repeatedKeyInputTimeLimit;
 	
 	inline void init(LPCSTR fileName) {
@@ -21,7 +21,7 @@ namespace config {
 
 		fixGroupTarget = ini::load(fileName, "bugFix", "fixGroupTarget", true, "on");
 
-		rotateSpeed = ini::load(fileName, "other", "rotateSpeed", 0.01);
+		rotationAmount = ini::load(fileName, "other", "rotationAmount", 0.01);
 		repeatedKeyInputTimeLimit = ini::load(fileName, "other", "repeatedKeyInputTimeLimit", 0.3);
 	}
 

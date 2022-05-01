@@ -165,12 +165,12 @@ namespace rotate {
 							locked = true;
 						}
 
-						const auto rgx = config::rotateSpeed * diffX;
+						const auto rgx = config::rotationAmount * diffX;
 						diff += eulerAngleDiffForAdditionalRotation(
 							selfMatrixInv,
 							Eigen::AngleAxisd(rgx, -wholeMatrix.col(1).normalized()));
 
-						const auto rgy = config::rotateSpeed * diffY;
+						const auto rgy = config::rotationAmount * diffY;
 						diff += eulerAngleDiffForAdditionalRotation(
 							selfMatrixInv,
 							Eigen::AngleAxisd(rgy, wholeMatrix.col(0).normalized()));
