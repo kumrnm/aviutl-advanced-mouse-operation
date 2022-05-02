@@ -2,7 +2,7 @@
 
 マウスオペレーション改（AdvancedMouseOperation.auf）は、AviUtl 拡張編集のメインウィンドウ上での編集操作を強化する AviUtl プラグインです。
 
-紹介動画は [こちら](https://www.nicovideo.jp/watch/sm0) 。
+紹介動画は [こちら](https://www.nicovideo.jp/watch/sm40410117) 。
 
 ## 要求環境
 
